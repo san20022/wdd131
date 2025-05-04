@@ -61,3 +61,17 @@ main p {
     margin: 0 auto 20px auto;
     margin-top: 80px;
 }
+
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark .content {
+    background-color: #444;
+    border-color: #666;
+}
+
+.dark h2 {
+    color: #66ccff;
+}
