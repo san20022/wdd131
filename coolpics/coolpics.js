@@ -18,3 +18,9 @@ a: link,
     a:visited {
     color: var(--accent - color);
 }
+
+header {
+    background - color; varl(--primary - color);
+
+
+}
