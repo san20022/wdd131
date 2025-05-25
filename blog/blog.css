@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --bg-color: #fffdf7;
+    --text-color: #1A181B;
+    --link-color: #a9e4ef;
+    --nav-color: #3F6A11;
+    --nav-hover: #FBB13C;
+    --border-color: #3185FC;
+    --book-title-color: var(--nav-color);
+    --site-title-color: var(--nav-color);
+    --cta-color: var(--nav-color);
+    --bg-color: #FCFCFC;
+
+    --border: 2px solid var(--border-color);
+}
+
+body {
+    margin: 0px;
+    background-color: var(--bg-color);
+}
+
+#site-title {
+    font-size: 35px;
+    text-align: center;
+    font-family: "Lato", serif;
+    font-weight: 900;
+    font-style: normal;
+    color: var(--title-color);
+    padding: 10px;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    justify-content: end;
+    border-top: var(--border);
+    border-bottom: var(--border);
+    font-family: "Lato", serif;
+    font-weight: 700;
+    font-style: bold;
+    list-style: none;
+    font-size: 20px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.nav-container>li>a {
+    text-decoration: none;
+    color: var(--nav-color);
+}
+
+.nav-container>li>a:hover {
+    color: var(--nav-hover);
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+}
+
+#filters {
+    border: var(--border);
+    grid-column: 2;
+    justify-self: end;
+    margin-right: 20px;
+    padding: 10px;
+
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.book-review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    grid-row: 1;
+}
+
+.book-content {
+    border-left: var(--border);
+    padding-left: 20px;
+}
+
+.book-title {
+    margin-top: 0px;
+    color: var(--book-title-color);
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.book-image {
+    display: block;
+    margin: auto;
+}
+
+.book-description {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cta {
+    text-decoration: none;
+    color: var(--cta-color);
+    font-weight: bold;
+}
+
+.post-metadata {
+    text-align: right;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Lato", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.skiptocontent a {
+    position: absolute;
+    top: -100px;
+    background-color: rgb(255, 106, 106);
+    color: #1A181B;
+    font-size: 25px;
+}
+
+.skiptocontent a:focus {
+    top: 100px;
+    padding: 15px;
+}
