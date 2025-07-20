@@ -1,0 +1,174 @@
+/* =======================
+   Desktop Styles
+   File: website-project-desktop.css
+   ======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+    color: #2c5bb9;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* prevent horizontal scrolling */
+}
+
+header {
+    background-color: #95B9FF;
+    padding: 1rem;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0.2rem auto;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 2rem;
+    font-style: italic;
+    margin-right: 1rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    margin: 0;
+    padding: 0;
+    margin-left: 1 rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #051434;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.contact-btn {
+    margin-left: 1rem;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.7rem;
+    line-height: 1.2;
+    color: #094BCC;
+    background-color: lightcyan;
+    border: 2px solid rgb(85, 85, 243);
+    border-radius: 10px;
+    font-weight: 600;
+    color: #094BCC;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: #95B9FF;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #094BCC;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.intro h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.intro p {
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+section.content,
+section.info {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+article {
+    flex: 1;
+}
+
+article h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+article p,
+article li {
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #094BCC;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-weight: 200;
+    font-size: 0.875rem;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+/* Lazy loading images */
+img[loading="lazy"] {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+    filter: blur(4px);
+}
+
+/*main image*/
+.lazy-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #094BCC;
+    font-weight: 600;
+    font-size: 2.5rem;
+    border: 2px solid transparent;
+    box-shadow: 0 0 8px rgba(9, 75, 204, 0.5);
+    /* blurry glow effect */
+    border-radius: 8px;
+}
